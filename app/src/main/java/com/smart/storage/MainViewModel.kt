@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.*
 class MainViewModel : ViewModel() {
 
 
-    // 2. 响应式委托：用于监听变化，驱动 UI
+    // 响应式委托：用于监听变化，驱动 UI
     private val clickCountFlow by smartStorageStateFlow("click_count", 0)
     private val userProfileFlow by smartStorageStateFlow("user_profile", UserProfile(0, "Guest"))
 
